@@ -77,7 +77,7 @@ public class FlowDSL {
         ic.addStaticStars(Result.class.name)
         cc.addCompilationCustomizers(ic)
 
-        ClosureScript dslScript = (ClosureScript)new GroovyShell(Jenkins.instance.pluginManager.uberClassLoader,new Binding(),cc).parse(dsl)
+        ClosureScript dslScript = (ClosureScript)new GroovyShell(Jenkins.instance.pluginManager.uberClassLoader, new Binding(), cc).parse(dsl)
         dslScript.setDelegate(flow);
 
         try {
@@ -232,7 +232,7 @@ public class FlowDelegate {
 
     def getActions(Job job, Map args) {
 
-        List<Action> originalActions = job.getActions();
+        List<Action> originalActions = job.getAllActions();
 
         List<ParameterDefinition> jobParams = null;
         for(Action action:originalActions) {

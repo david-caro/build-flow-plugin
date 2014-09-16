@@ -27,12 +27,13 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.480</version>
+    <version>1.577
+    </version>
   </parent>
 
   <groupId>com.cloudbees.plugins</groupId>
   <artifactId>build-flow-plugin</artifactId>
-  <version>0.16-SNAPSHOT</version>
+  <version>0.16-SNAPSHOT-DCARO</version>
   <packaging>hpi</packaging>
   <name>CloudBees Build Flow plugin</name>
   <description>Manages job orchestration as a build flow</description>
